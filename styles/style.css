@@ -1,0 +1,28 @@
+body {
+	text-align: center;
+	background-image: url('../images/youtube-background.jpg');
+	background-size: cover;
+	/*background-position: fixed;*/
+	background-repeat: no-repeat;
+	/*background-color: black;*/
+}
+
+.thumbnail {
+	margin-top: 15px;
+	border: 3px solid black;
+	border-radius: 25px
+}
+
+.title {
+	width: 320px;
+	margin: auto;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.title a {
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	font-weight: 700;
+}
