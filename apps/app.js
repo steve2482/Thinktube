@@ -15,14 +15,17 @@ $(function() {
     var url = 'https://www.googleapis.com/youtube/v3/search';
     $.getJSON(url, params, function(data) {
       console.log(data);
-      showResults(data.Search);
+      showResults(data);
     });
   }
 
   function showResults(results) {
     var html = '';
+    var i = 0;
     $.each(results, function(index, value) {
-      html += '<img src="' + value.thumbnail + '">';
+      html += '<img class="thumbnail" src="' + results.items[0][i].snippet.thumbnails.medium.url + '">';
+      console.log(results.items[1].snippet.thumbnails.medium.url);
+      // i++;
     });
     $('.results').html(html);
   }
